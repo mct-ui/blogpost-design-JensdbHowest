@@ -27,7 +27,6 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
     color: #5C6366;
     
     /* font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif; */
@@ -146,6 +145,13 @@ blockquote * {
     line-height: inherit;
 }
 
+.c-quote {
+    color: #00b37d;
+    background-color: #F2FAF8;
+    padding: 25px;
+    font-family: "Droid-serif", Georgio, serif;
+}
+
 figcaption {
     font-size: 12px;
     line-height: 16px;
@@ -214,7 +220,7 @@ a:focus {
 
 .c-article__header,
 .c-article__body {
-    max-width: 1200;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -223,7 +229,11 @@ a:focus {
 }
 
 .c-article__body {
-    padding: 0px 24px;
+    padding: 0 24px;
+}
+
+.c-article__date {
+    font-size: 14px;
 }
 
 /* 
@@ -241,7 +251,13 @@ a:focus {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .c-article__title {
+        font-size: 36px;
+        line-height: 40px; 
+    }
+    
+}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -263,11 +279,21 @@ a:focus {
     .c-article__body {
         padding: 24px 48px;
     }
+
+    .c-article__title {
+        font-size: 46px;
+        line-height: 56px; 
+    }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {
+    .c-article__title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
     .c-author {
         display: block;
     }
