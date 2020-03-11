@@ -32,6 +32,8 @@ html {
     padding: 48px 24px 24px;
     /* font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif; */
     font-family: "droid-serif", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
